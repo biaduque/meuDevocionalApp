@@ -30,7 +30,7 @@
 		1391571C278616F40056A439 /* MinhasDevocionais+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391571B278616F40056A439 /* MinhasDevocionais+UITextField.swift */; };
 		1391571E278617790056A439 /* NotificacoesConteudo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391571D278617790056A439 /* NotificacoesConteudo.swift */; };
 		139157222786182E0056A439 /* UserDevocionais.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139157212786182E0056A439 /* UserDevocionais.swift */; };
-		13915724278618950056A439 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13915723278618950056A439 /* EmptyView.swift */; };
+		13915724278618950056A439 /* EmptyContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13915723278618950056A439 /* EmptyContent.swift */; };
 		139272AC27B07395002C4F09 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139272AB27B07395002C4F09 /* Stickers.xcassets */; };
 		139272B027B07395002C4F09 /* MeuDevocionalSticker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 139272A927B07394002C4F09 /* MeuDevocionalSticker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		13949BBB2798797300650144 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13949BBA2798797300650144 /* WidgetKit.framework */; };
@@ -58,6 +58,7 @@
 		139DB3E427B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */; };
 		139DB3E627B6E0D100AE1112 /* LinkValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E527B6E0D100AE1112 /* LinkValidation.swift */; };
 		139DB3E827B6E13000AE1112 /* CollectionItemMural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E727B6E13000AE1112 /* CollectionItemMural.swift */; };
+		139DB3EC27B6ED2900AE1112 /* ImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3EB27B6ED2900AE1112 /* ImagePickerDelegate.swift */; };
 		13C07590279488950051F316 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0758F279488950051F316 /* OnboardViewController.swift */; };
 		13C07592279488CB0051F316 /* ViewOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C07591279488CB0051F316 /* ViewOnboarding.swift */; };
 		13C07595279731480051F316 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C07594279731480051F316 /* ImagePicker.swift */; };
@@ -123,7 +124,7 @@
 		1391571B278616F40056A439 /* MinhasDevocionais+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MinhasDevocionais+UITextField.swift"; sourceTree = "<group>"; };
 		1391571D278617790056A439 /* NotificacoesConteudo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificacoesConteudo.swift; sourceTree = "<group>"; };
 		139157212786182E0056A439 /* UserDevocionais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDevocionais.swift; sourceTree = "<group>"; };
-		13915723278618950056A439 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		13915723278618950056A439 /* EmptyContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyContent.swift; sourceTree = "<group>"; };
 		139272A927B07394002C4F09 /* MeuDevocionalSticker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MeuDevocionalSticker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		139272AB27B07395002C4F09 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		139272AD27B07395002C4F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaDevocional3ViewControllerDelegate.swift; sourceTree = "<group>"; };
 		139DB3E527B6E0D100AE1112 /* LinkValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidation.swift; sourceTree = "<group>"; };
 		139DB3E727B6E13000AE1112 /* CollectionItemMural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemMural.swift; sourceTree = "<group>"; };
+		139DB3EB27B6ED2900AE1112 /* ImagePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerDelegate.swift; sourceTree = "<group>"; };
 		13C0758F279488950051F316 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		13C07591279488CB0051F316 /* ViewOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOnboarding.swift; sourceTree = "<group>"; };
 		13C07594279731480051F316 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -212,23 +214,17 @@
 			children = (
 				13949BCD2798807D00650144 /* MeuDevocional.entitlements */,
 				13C075932797312F0051F316 /* Image */,
-				13C0758E279487410051F316 /* Onboard */,
 				139DB3E027B6DDB300AE1112 /* Protocols */,
 				13F476122791E55D00C12113 /* Model */,
+				139B6FAB26A8A21500C50E06 /* Views */,
+				139DB3E927B6EA4800AE1112 /* ViewControllers */,
 				139B6FC626A8CF8400C50E06 /* CoreData */,
-				139B6FA826A8A1E200C50E06 /* DevocionaisDiarias */,
-				139B6FAD26A8A25900C50E06 /* MinhasDevocionais */,
-				139B6FAC26A8A24800C50E06 /* Mural */,
-				13915718278616650056A439 /* Info */,
-				139B6FAB26A8A21500C50E06 /* ViewControllersCell */,
 				139B6FA926A8A1EB00C50E06 /* Dependences */,
+				139DB3EA27B6EAD900AE1112 /* Interface */,
 				13026C3826A0A1FE00D683B0 /* AppDelegate.swift */,
 				13026C3A26A0A1FE00D683B0 /* SceneDelegate.swift */,
-				13026C3E26A0A1FE00D683B0 /* Main.storyboard */,
 				13026C4126A0A20300D683B0 /* Assets.xcassets */,
-				13026C4326A0A20300D683B0 /* LaunchScreen.storyboard */,
 				13026C4626A0A20300D683B0 /* Info.plist */,
-				139B6FBF26A8CEE800C50E06 /* Model.xcdatamodeld */,
 			);
 			path = MeuDevocional;
 			sourceTree = "<group>";
@@ -323,19 +319,20 @@
 				1391571F278617840056A439 /* Notificacoes */,
 				1391571A278616C30056A439 /* Extensions */,
 				139157192786169F0056A439 /* ConteudoBase */,
-				13915723278618950056A439 /* EmptyView.swift */,
+				13915723278618950056A439 /* EmptyContent.swift */,
 			);
 			path = Dependences;
 			sourceTree = "<group>";
 		};
-		139B6FAB26A8A21500C50E06 /* ViewControllersCell */ = {
+		139B6FAB26A8A21500C50E06 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				13C07591279488CB0051F316 /* ViewOnboarding.swift */,
 				13026C5426A0C2D300D683B0 /* MyCollectionViewCell.swift */,
 				134ADBF8279F11F400AD4370 /* MyCollectionViewCell2.swift */,
 				139B6FA126A7456A00C50E06 /* MyTableViewCell.swift */,
 			);
-			path = ViewControllersCell;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		139B6FAC26A8A24800C50E06 /* Mural */ = {
@@ -360,6 +357,7 @@
 		139B6FC626A8CF8400C50E06 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				139B6FBF26A8CEE800C50E06 /* Model.xcdatamodeld */,
 				139B6FC726A8CF9700C50E06 /* CoreDataDevocionais.swift */,
 				139B6FCE26A9DA9900C50E06 /* CoreDataPost.swift */,
 			);
@@ -371,15 +369,36 @@
 			children = (
 				139DB3E127B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift */,
 				139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */,
+				139DB3EB27B6ED2900AE1112 /* ImagePickerDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		139DB3E927B6EA4800AE1112 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				13C0758E279487410051F316 /* Onboard */,
+				139B6FA826A8A1E200C50E06 /* DevocionaisDiarias */,
+				139B6FAD26A8A25900C50E06 /* MinhasDevocionais */,
+				139B6FAC26A8A24800C50E06 /* Mural */,
+				13915718278616650056A439 /* Info */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		139DB3EA27B6EAD900AE1112 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				13026C3E26A0A1FE00D683B0 /* Main.storyboard */,
+				13026C4326A0A20300D683B0 /* LaunchScreen.storyboard */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		13C0758E279487410051F316 /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
 				13C0758F279488950051F316 /* OnboardViewController.swift */,
-				13C07591279488CB0051F316 /* ViewOnboarding.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -544,6 +563,7 @@
 				134ADBF9279F11F400AD4370 /* MyCollectionViewCell2.swift in Sources */,
 				136F9E1026AE0D590064F06F /* vidaBase.swift in Sources */,
 				139B6F6D26A2724C00C50E06 /* DevocionalDiarioEstudoViewController.swift in Sources */,
+				139DB3EC27B6ED2900AE1112 /* ImagePickerDelegate.swift in Sources */,
 				139B6FC426A8CF7600C50E06 /* Devocionais+CoreDataClass.swift in Sources */,
 				13F476182791FFE900C12113 /* DevocionalDiarioRapidoViewController.swift in Sources */,
 				1331FFD226AB6605003BDFAC /* cotidianoBase.swift in Sources */,
@@ -557,7 +577,7 @@
 				136F9E1226AE17C30064F06F /* estudosBase.swift in Sources */,
 				139B6FA026A72FA800C50E06 /* MinhaDevocional3ViewController.swift in Sources */,
 				139B6F7326A2766400C50E06 /* MuralViewController2.swift in Sources */,
-				13915724278618950056A439 /* EmptyView.swift in Sources */,
+				13915724278618950056A439 /* EmptyContent.swift in Sources */,
 				139B6FA226A7456A00C50E06 /* MyTableViewCell.swift in Sources */,
 				13C07595279731480051F316 /* ImagePicker.swift in Sources */,
 				13C07590279488950051F316 /* OnboardViewController.swift in Sources */,
