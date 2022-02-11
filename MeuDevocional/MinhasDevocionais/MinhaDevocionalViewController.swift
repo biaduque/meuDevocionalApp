@@ -8,10 +8,6 @@
 import UIKit
 import CoreData
 
-private let reuseIdentifier = "Cell"
-
-var minhasDevocionais: [CollectionItem] = []
-let reuseIdentifier4 = "cell4"
 
 class MinhaDevocionalViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource,NSFetchedResultsControllerDelegate {
 
@@ -19,6 +15,8 @@ class MinhaDevocionalViewController: UIViewController, UICollectionViewDelegate,
     let searchController = UISearchController(searchResultsController: nil)
     @IBOutlet weak var notFound: UIImageView!
     
+    public var minhasDevocionais: [CollectionItem] = []
+    private let reuseIdentifier4 = "cell4"
     var searching = false
     var dataDevocional: [Devocionais] = []
     var dataFiltred: [Devocionais] = []
@@ -266,7 +264,7 @@ extension MinhaDevocionalViewController: MinhaDevocional3ViewControllerDelegate{
 
 extension MinhaDevocionalViewController: MinhaDevocional2ViewControllerDelegate{
     ///para a edicao
-    func didRegister2(){
+    func didRegisterAtt(){
         collectionView.reloadData()
         navigationController?.navigationBar.prefersLargeTitles = true
     }

@@ -9,8 +9,8 @@ import UIKit
 import WebKit
 
 class DevocionalMusicViewController: UIViewController,WKNavigationDelegate {
-    var recebe = ""
-    var webView: WKWebView!
+    public var recebe = ""
+    private var webView: WKWebView!
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self

@@ -8,7 +8,7 @@
 import UIKit
 
 class DevocionalDiarioRapidoViewController: UIViewController {
-    var devocional: Devocional?
+    public var devocional: Devocional?
     
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var refBiblicaLabel: UILabel?
@@ -17,9 +17,9 @@ class DevocionalDiarioRapidoViewController: UIViewController {
     
     @IBOutlet weak var musicButton: UIButton!
     
-    var versiculo = ""
-    var musica = ""
-    var introducao = ""
+    public var versiculo = ""
+    public var musica = ""
+    public var introducao = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,34 +47,7 @@ class DevocionalDiarioRapidoViewController: UIViewController {
             present(ac, animated: true)
     }
     
-    // MARK: Prepare (edicao e devocional)
-    ///funcao que ira gerar o modal para a criacao da nova colecction
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        ///adiciona o card que sera apenas editado na proxima view...
-//        let _ = try? CoreDataStack.createDevocional(titulo: self.titleLabel?.text ?? "",
-//                                                    baseBiblica: self.versiculo,
-//                                                    contextualizacao: "",
-//                                                    reflexao: self.introducao,
-//                                                    conclusao: "",
-//                                                    aplicacao1: "",
-//                                                    aplicacao2: "",
-//                                                    aplicacao3: "",
-//                                                    backgroundColor: "1",
-//                                                    backgroundImage: "crie2",
-//                                                    link: self.musica,
-//                                                    livro: self.versiculo,
-//                                                    capitulo: "",
-//                                                    versiculo: "",
-//                                                    data: "")
-//
-//        let vc = segue.destination as! MinhaDevocional3ViewController
-//        let index = try? CoreDataStack.getDevocional().count
-//        vc.edit = true
-//        vc.rapida = true
-//        vc.indice = (index ?? 1) - 1
-//   }
-    
-    func checkDevocional(titulo: String) -> Int {
+    private func checkDevocional(titulo: String) -> Int {
         let dataDevocional = try! CoreDataStack.getDevocional()
         for i in 0..<dataDevocional.count{
             ///se a devocional existir, ela sera editada
@@ -101,7 +74,7 @@ class DevocionalDiarioRapidoViewController: UIViewController {
         return dataDevocional.count
     }
     
-    func createDevocional() -> UIViewController? {
+    private func createDevocional() -> UIViewController? {
         if let vc = storyboard?.instantiateViewController(identifier: "minhadevocionalForms") as? MinhaDevocional3ViewController {
             let index = checkDevocional(titulo: self.titleLabel?.text ?? "Nova devocional")
             vc.edit = true
@@ -121,7 +94,7 @@ class DevocionalDiarioRapidoViewController: UIViewController {
     }
     
     
-    func content(){
+    private func content(){
         self.titleLabel?.text = devocional?.titulo
         let parte1 =  devocional!.introducao
         let parte2 = devocional!.refBiblica
@@ -136,7 +109,7 @@ class DevocionalDiarioRapidoViewController: UIViewController {
     }
     
     /// altera o visual do botao de play
-    func editButton(button:UIButton){
+    private func editButton(button:UIButton){
         button.layer.backgroundColor = nil
         button.layer.cornerRadius = 1
         button.layer.shadowOffset = CGSize(width: 1, height: 1)

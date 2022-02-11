@@ -40,8 +40,8 @@ class DevocionalDiarioViewController: UIViewController {
     @IBOutlet weak var tituloEstudos: UILabel?
     
     /// variavel de conexao com o Banco de dados
-    var isConect = false
-    var devocionaisRapidas: [Devocional]?
+    private var isConect = false
+    private var devocionaisRapidas: [Devocional]?
     
 
     
@@ -84,7 +84,7 @@ class DevocionalDiarioViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
-    func openOnboardFirstRun(){
+    private func openOnboardFirstRun(){
         let isFirstRun = defaults.bool(forKey: "isMyFirstRun")
         ///colocado como false pq o user default ja inicia como false
         if isFirstRun == false{
@@ -95,17 +95,17 @@ class DevocionalDiarioViewController: UIViewController {
     }
     
     // MARK: Notificacao
-    func criaNotif(){
+    private func criaNotif(){
         /// pedindo permissão
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert,.sound]){
             (granted,error) in
         }
         /// criando o conteudo da notificacao
-        let rand = Int.random(in: 0..<notfTitles.count)
+        let rand = Int.random(in: 0..<ConteudoNotificacoes.shared.notfTitles.count)
         let content = UNMutableNotificationContent()
-        content.title = notfTitles[rand]
-        content.body = notfContents[rand]
+        content.title = ConteudoNotificacoes.shared.notfTitles[rand]
+        content.body = ConteudoNotificacoes.shared.notfContents[rand]
         
         //criando o intervalo de tempo
         //86200 = 24h

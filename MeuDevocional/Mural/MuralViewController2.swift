@@ -17,12 +17,12 @@ class MuralViewController2: UIViewController {
     
     weak var delegate: MuralViewController2Delegate? //para atualizacao da collectionView
 
-    var dataPost: [Post] = []
-    var indice = 0
-    var minhaNota = ""
-    var selectedColor = "postit1"
-    var colorText = "Amarelo1"
-    var isEdit = false
+    public var dataPost: [Post] = []
+    public var indice = 0
+    private var minhaNota = ""
+    private var selectedColor = "postit1"
+    private var colorText = "Amarelo1"
+    public var isEdit = false
     
     @IBOutlet weak var limitText: UILabel!
     @IBOutlet weak var minhaNotaInput: UITextField!
@@ -34,9 +34,9 @@ class MuralViewController2: UIViewController {
     @IBOutlet weak var visualizacao: UIImageView!
     @IBOutlet weak var visualizacaoLabel: UILabel!
     
-    var imagePicker: ImagePicker!
-    var acesso = false
-    var isImage = false
+    private var imagePicker: ImagePicker!
+    private var acesso = false
+    private var isImage = false
 
     
     override func viewDidLoad() {
@@ -219,7 +219,7 @@ class MuralViewController2: UIViewController {
     }
     
     //funcao para mudar a cor selecionada
-    func changeColor(button:UIButton, cor:String){
+    private func changeColor(button:UIButton, cor:String){
         button.setBackgroundImage(UIImage(named: cor), for: .normal)
     }
     

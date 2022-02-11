@@ -7,25 +7,21 @@
 
 import UIKit
 
-protocol MinhaDevocional3ViewControllerDelegate: AnyObject {
-    func didRegister()
-}
-
 class MinhaDevocional3ViewController: UIViewController {
     
     var validation = Validation() //para validar links
     weak var delegate: MinhaDevocional3ViewControllerDelegate?
     
-    var dataDevocional: [Devocionais] = []
-    var indice = 0
-    var edit = false
-    var rapida = false
-    var selectedColor = "1"
-    var meuTitulo = ""
-    var minhaBase = ""
-    var selectedColorName = "crie1"
+    public var dataDevocional: [Devocionais] = []
+    public var indice = 0
+    public var edit = false
+    public var rapida = false
+    private var selectedColor = "1"
+    private var meuTitulo = ""
+    private var minhaBase = ""
+    private var selectedColorName = "crie1"
     
-    let inputLista: [String] = ["Título", "Livro","Capítulo","Versículo","Palavra chave 1", "Palavra chave 2", "Palavra chave 3"]
+    private let inputLista: [String] = ["Título", "Livro","Capítulo","Versículo","Palavra chave 1", "Palavra chave 2", "Palavra chave 3"]
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var reflexaoView: UITextView!
@@ -265,7 +261,7 @@ class MinhaDevocional3ViewController: UIViewController {
 
     }
     
-    func alertLink(){
+    private func alertLink(){
         let ac = UIAlertController(title:"Link Inválido", message: "Insira um link do YouTube, Spotify, Apple Music ou Deezer.", preferredStyle: .alert)
             ac.addAction(UIAlertAction(title: "OK", style: .cancel, handler: {
                 [weak self] action in

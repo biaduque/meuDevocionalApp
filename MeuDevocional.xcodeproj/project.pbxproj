@@ -16,7 +16,6 @@
 		13026C5326A0C10700D683B0 /* DevocionalDiarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13026C5226A0C10700D683B0 /* DevocionalDiarioViewController.swift */; };
 		13026C5526A0C2D300D683B0 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13026C5426A0C2D300D683B0 /* MyCollectionViewCell.swift */; };
 		13026C5726A0CC7400D683B0 /* EstruturaBaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13026C5626A0CC7400D683B0 /* EstruturaBaseData.swift */; };
-		13026C5926A0CDC000D683B0 /* ConstraintsAndDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13026C5826A0CDC000D683B0 /* ConstraintsAndDesign.swift */; };
 		13026C6126A211BA00D683B0 /* MinhaDevocional2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13026C6026A211BA00D683B0 /* MinhaDevocional2ViewController.swift */; };
 		1331FFD026AB2B11003BDFAC /* DevocionalMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331FFCF26AB2B11003BDFAC /* DevocionalMusicViewController.swift */; };
 		1331FFD226AB6605003BDFAC /* cotidianoBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1331FFD126AB6605003BDFAC /* cotidianoBase.swift */; };
@@ -55,11 +54,15 @@
 		139B6FCB26A9DA5500C50E06 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6FC926A9DA5500C50E06 /* Post+CoreDataClass.swift */; };
 		139B6FCC26A9DA5500C50E06 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6FCA26A9DA5500C50E06 /* Post+CoreDataProperties.swift */; };
 		139B6FCF26A9DA9900C50E06 /* CoreDataPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139B6FCE26A9DA9900C50E06 /* CoreDataPost.swift */; };
+		139DB3E227B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E127B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift */; };
+		139DB3E427B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */; };
+		139DB3E627B6E0D100AE1112 /* LinkValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E527B6E0D100AE1112 /* LinkValidation.swift */; };
+		139DB3E827B6E13000AE1112 /* CollectionItemMural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139DB3E727B6E13000AE1112 /* CollectionItemMural.swift */; };
 		13C07590279488950051F316 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0758F279488950051F316 /* OnboardViewController.swift */; };
 		13C07592279488CB0051F316 /* ViewOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C07591279488CB0051F316 /* ViewOnboarding.swift */; };
 		13C07595279731480051F316 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C07594279731480051F316 /* ImagePicker.swift */; };
 		13C0759727973C1B0051F316 /* SalvarImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C0759627973C1B0051F316 /* SalvarImagem.swift */; };
-		13F476142791E56D00C12113 /* DevocionaisRapidas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F476132791E56D00C12113 /* DevocionaisRapidas.swift */; };
+		13F476142791E56D00C12113 /* Devocional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F476132791E56D00C12113 /* Devocional.swift */; };
 		13F476162791EED700C12113 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F476152791EED700C12113 /* DataManager.swift */; };
 		13F476182791FFE900C12113 /* DevocionalDiarioRapidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F476172791FFE900C12113 /* DevocionalDiarioRapidoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -108,7 +111,6 @@
 		13026C5226A0C10700D683B0 /* DevocionalDiarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevocionalDiarioViewController.swift; sourceTree = "<group>"; };
 		13026C5426A0C2D300D683B0 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		13026C5626A0CC7400D683B0 /* EstruturaBaseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstruturaBaseData.swift; sourceTree = "<group>"; };
-		13026C5826A0CDC000D683B0 /* ConstraintsAndDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsAndDesign.swift; sourceTree = "<group>"; };
 		13026C6026A211BA00D683B0 /* MinhaDevocional2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaDevocional2ViewController.swift; sourceTree = "<group>"; };
 		1331FFCF26AB2B11003BDFAC /* DevocionalMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevocionalMusicViewController.swift; sourceTree = "<group>"; };
 		1331FFD126AB6605003BDFAC /* cotidianoBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cotidianoBase.swift; sourceTree = "<group>"; };
@@ -146,11 +148,15 @@
 		139B6FC926A9DA5500C50E06 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
 		139B6FCA26A9DA5500C50E06 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		139B6FCE26A9DA9900C50E06 /* CoreDataPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPost.swift; sourceTree = "<group>"; };
+		139DB3E127B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaDevocional2ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhaDevocional3ViewControllerDelegate.swift; sourceTree = "<group>"; };
+		139DB3E527B6E0D100AE1112 /* LinkValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkValidation.swift; sourceTree = "<group>"; };
+		139DB3E727B6E13000AE1112 /* CollectionItemMural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemMural.swift; sourceTree = "<group>"; };
 		13C0758F279488950051F316 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		13C07591279488CB0051F316 /* ViewOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOnboarding.swift; sourceTree = "<group>"; };
 		13C07594279731480051F316 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		13C0759627973C1B0051F316 /* SalvarImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalvarImagem.swift; sourceTree = "<group>"; };
-		13F476132791E56D00C12113 /* DevocionaisRapidas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevocionaisRapidas.swift; sourceTree = "<group>"; };
+		13F476132791E56D00C12113 /* Devocional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devocional.swift; sourceTree = "<group>"; };
 		13F476152791EED700C12113 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		13F476172791FFE900C12113 /* DevocionalDiarioRapidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevocionalDiarioRapidoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +213,7 @@
 				13949BCD2798807D00650144 /* MeuDevocional.entitlements */,
 				13C075932797312F0051F316 /* Image */,
 				13C0758E279487410051F316 /* Onboard */,
+				139DB3E027B6DDB300AE1112 /* Protocols */,
 				13F476122791E55D00C12113 /* Model */,
 				139B6FC626A8CF8400C50E06 /* CoreData */,
 				139B6FA826A8A1E200C50E06 /* DevocionaisDiarias */,
@@ -316,8 +323,6 @@
 				1391571F278617840056A439 /* Notificacoes */,
 				1391571A278616C30056A439 /* Extensions */,
 				139157192786169F0056A439 /* ConteudoBase */,
-				13026C5826A0CDC000D683B0 /* ConstraintsAndDesign.swift */,
-				13026C4C26A0A3E300D683B0 /* CollectionItem.swift */,
 				13915723278618950056A439 /* EmptyView.swift */,
 			);
 			path = Dependences;
@@ -361,6 +366,15 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		139DB3E027B6DDB300AE1112 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				139DB3E127B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift */,
+				139DB3E327B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		13C0758E279487410051F316 /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,9 +396,12 @@
 		13F476122791E55D00C12113 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				13F476132791E56D00C12113 /* DevocionaisRapidas.swift */,
+				13026C4C26A0A3E300D683B0 /* CollectionItem.swift */,
+				139DB3E727B6E13000AE1112 /* CollectionItemMural.swift */,
+				13F476132791E56D00C12113 /* Devocional.swift */,
 				13F476152791EED700C12113 /* DataManager.swift */,
 				13949BCB27987DF800650144 /* UserDefaultManager.swift */,
+				139DB3E527B6E0D100AE1112 /* LinkValidation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -532,7 +549,7 @@
 				1331FFD226AB6605003BDFAC /* cotidianoBase.swift in Sources */,
 				139B6FC126A8CEE800C50E06 /* Model.xcdatamodeld in Sources */,
 				1391571E278617790056A439 /* NotificacoesConteudo.swift in Sources */,
-				13026C5926A0CDC000D683B0 /* ConstraintsAndDesign.swift in Sources */,
+				139DB3E627B6E0D100AE1112 /* LinkValidation.swift in Sources */,
 				139B6FC526A8CF7600C50E06 /* Devocionais+CoreDataProperties.swift in Sources */,
 				13949BCC27987DF800650144 /* UserDefaultManager.swift in Sources */,
 				1331FFD026AB2B11003BDFAC /* DevocionalMusicViewController.swift in Sources */,
@@ -549,14 +566,17 @@
 				139B6FCC26A9DA5500C50E06 /* Post+CoreDataProperties.swift in Sources */,
 				13026C5326A0C10700D683B0 /* DevocionalDiarioViewController.swift in Sources */,
 				13026C3926A0A1FE00D683B0 /* AppDelegate.swift in Sources */,
-				13F476142791E56D00C12113 /* DevocionaisRapidas.swift in Sources */,
+				13F476142791E56D00C12113 /* Devocional.swift in Sources */,
 				139B6FC826A8CF9700C50E06 /* CoreDataDevocionais.swift in Sources */,
 				136CEA0F26B24FF2007BDC49 /* MinhaDevocionalViewController.swift in Sources */,
+				139DB3E227B6DE3100AE1112 /* MinhaDevocional2ViewControllerDelegate.swift in Sources */,
 				139B6FCB26A9DA5500C50E06 /* Post+CoreDataClass.swift in Sources */,
 				13026C4D26A0A3E300D683B0 /* CollectionItem.swift in Sources */,
 				13026C3B26A0A1FE00D683B0 /* SceneDelegate.swift in Sources */,
 				136CEA0D26B0ABA4007BDC49 /* InfoViewController.swift in Sources */,
 				139044262798AC0400EFAAAB /* WidgetContent.swift in Sources */,
+				139DB3E427B6DE7900AE1112 /* MinhaDevocional3ViewControllerDelegate.swift in Sources */,
+				139DB3E827B6E13000AE1112 /* CollectionItemMural.swift in Sources */,
 				13C0759727973C1B0051F316 /* SalvarImagem.swift in Sources */,
 				139157222786182E0056A439 /* UserDevocionais.swift in Sources */,
 			);

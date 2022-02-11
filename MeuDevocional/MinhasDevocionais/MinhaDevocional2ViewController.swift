@@ -6,17 +6,13 @@
 //
 
 import UIKit
-protocol MinhaDevocional2ViewControllerDelegate: AnyObject {
-    func didRegister2()
-}
-
 class MinhaDevocional2ViewController: UIViewController {
     
     weak var delegate2: MinhaDevocional2ViewControllerDelegate?
-    var tituloShare = "𝑀𝑒𝓊 𝒟𝑒𝓋𝑜𝒸𝒾𝑜𝓃𝒶𝓁"
-    var devocional = 0
-    var dataDevocional: [Devocionais] = []
-    var textoDefaut = ""
+    private var tituloShare = "𝑀𝑒𝓊 𝒟𝑒𝓋𝑜𝒸𝒾𝑜𝓃𝒶𝓁"
+    private var textoDefaut = ""
+    public var devocional = 0
+    public var dataDevocional: [Devocionais] = []
     
     @IBOutlet weak var baseBiblica: UILabel!
     @IBOutlet weak var titulo: UILabel!
@@ -66,7 +62,7 @@ class MinhaDevocional2ViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         //super.viewWillDisappear(animated)
         if self.isMovingFromParent {
-            delegate2?.didRegister2()
+            delegate2?.didRegisterAtt()
         }
     }
     
@@ -100,7 +96,7 @@ class MinhaDevocional2ViewController: UIViewController {
     }
     
     // MARK: Funcoes de cores
-    func editaCores(){
+    private func editaCores(){
         var selectedColor = UIColor()
         if dataDevocional[devocional].backgroundColor == "1"{
             selectedColor = UIColor(named: "Verde1") ?? verde
@@ -126,7 +122,7 @@ class MinhaDevocional2ViewController: UIViewController {
     }
     
     ///funcao auxiliar
-    func editPalavraChave(pc: UILabel, color: UIColor){
+    private func editPalavraChave(pc: UILabel, color: UIColor){
         if pc.text != ""{
             pc.isHidden = false
             pc.backgroundColor = color.withAlphaComponent(0.5)
@@ -134,7 +130,7 @@ class MinhaDevocional2ViewController: UIViewController {
     }
     
     ///funcao que atualiza a devocional depois de passar pela tela do edit
-    func atualizaDevocional(){
+    private func atualizaDevocional(){
         baseBiblica.text = dataDevocional[devocional].baseBiblica
         titulo.text = dataDevocional[devocional].titulo
         reflexao.text = dataDevocional[devocional].reflexao
@@ -147,7 +143,7 @@ class MinhaDevocional2ViewController: UIViewController {
     }
     
     /// altera o visual do botao de play
-    func editButton(button:UIButton){
+    private func editButton(button:UIButton){
         button.layer.backgroundColor = nil
         button.layer.cornerRadius = 1
         button.layer.shadowOffset = CGSize(width: 1, height: 1)

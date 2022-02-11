@@ -1,6 +1,5 @@
-//Esse arquivo é a classe de cada item da devocional
+///Esse arquivo é a classe de cada item da devocional
 
-import Foundation
 import UIKit
 
 open class CollectionItem{
@@ -44,19 +43,3 @@ open class CollectionItem{
         self.link = link
     }
 }
-
-open class CollectionItemMural{
-    
-    open var nota: String
-    open var backgroundImage: UIImage
-    
-    public init(){
-        nota = " "
-        backgroundImage = UIImage(named: "novopost")!
-    }
-    public init(nota: String, backgroundImage: UIImage) {
-        self.nota = nota
-        self.backgroundImage = backgroundImage
-    }
-}
-

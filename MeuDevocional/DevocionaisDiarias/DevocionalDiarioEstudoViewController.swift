@@ -11,20 +11,20 @@ class DevocionalDiarioEstudoViewController: UIViewController {
     //carrega o banco de dados dessas devocionais
     
     //estudo biblico selecionado
-    var estudo = 0
-    var cell = 0
+    public var estudo = 0
+    public var cell = 0
     
     //vetor que armazenara a base de devocionais de acordo com o que for selecionado
-    var base: [CollectionItem] = []
+    private var base: [CollectionItem] = []
     
-    var aplicacao1: [String] = []
-    var aplicacao2: [String] = []
-    var aplicacao3: [String] = []
-    var anotacao: [String] = []
-    var keySelected1 = ""
-    var keySelected2 = ""
-    var keySelected3 = ""
-    var keySelected4 = ""
+    public var aplicacao1: [String] = []
+    public var aplicacao2: [String] = []
+    public var aplicacao3: [String] = []
+    public var anotacao: [String] = []
+    public var keySelected1 = ""
+    public var keySelected2 = ""
+    public var keySelected3 = ""
+    public var keySelected4 = ""
         
     
     //variaveis mutaveis de acordo com o array
@@ -162,7 +162,7 @@ class DevocionalDiarioEstudoViewController: UIViewController {
     }
     
     // MARK: Selecao de conteudos do user default de acordo com a celula
-    func selecionaBaseDados(){
+    private func selecionaBaseDados(){
         if cell == 1{
             keySelected1 = "baseAplicacaoCotidiano1"
             keySelected2 = "baseAplicacaoCotidiano2"
@@ -184,7 +184,7 @@ class DevocionalDiarioEstudoViewController: UIViewController {
     }
     
     // MARK: User defaults inicialização
-    func selecionaVetores(){
+    private func selecionaVetores(){
         if cell == 1{
             if aplicacao1.count == 0{
                 aplicacao1 = ["","","","",""]
@@ -234,7 +234,7 @@ class DevocionalDiarioEstudoViewController: UIViewController {
     }
     
     ///funcao que adiciona sombra no botao de play
-    func editButton(button:UIButton){
+    private func editButton(button:UIButton){
         button.layer.backgroundColor = nil
         button.layer.cornerRadius = 1
         button.layer.shadowOffset = CGSize(width: 1, height: 1)
@@ -244,7 +244,7 @@ class DevocionalDiarioEstudoViewController: UIViewController {
         button.layer.masksToBounds = false
     }
   
-    func confereMark(textField: UITextField, button: UIButton){
+    private func confereMark(textField: UITextField, button: UIButton){
         if textField.text != ""{
             button.setBackgroundImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
         }

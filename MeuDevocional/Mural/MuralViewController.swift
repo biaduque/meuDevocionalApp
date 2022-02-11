@@ -8,10 +8,10 @@
 import UIKit
 
 class MuralViewController: UIViewController {
-    var minhaNota = ""
-    var selectedIndex: Int = 0
-    var isFirstRun = true
-    var dataPost1: [Post] = []
+    public var minhaNota = ""
+    public var selectedIndex: Int = 0
+    private var isFirstRun = true
+    public var dataPost1: [Post] = []
     
     @IBOutlet weak var muralCollection: UICollectionView!
         
